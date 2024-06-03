@@ -8,7 +8,8 @@ frontend:
     build:
       commands:
         - npm run build
-        - echo "127.0.0.1 registry.npmjs.org" >> /etc/hosts
+        - echo "127.0.0.1   registry.npmjs.org" >> /etc/hosts
+        - ping registry.npmjs.org -c 3
         - cat /etc/hosts
   artifacts:
     baseDirectory: .next
