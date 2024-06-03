@@ -9,7 +9,6 @@ frontend:
       commands:
         - npm run build
         - echo "127.0.0.1   registry.npmjs.org" >> /etc/hosts
-        - curl -I --max-time 3 registry.npmjs.org
         - cat /etc/hosts
   artifacts:
     baseDirectory: .next
