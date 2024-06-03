@@ -8,6 +8,7 @@ frontend:
       commands:
         - npm run build
         - echo "127.0.0.1 registry.npmjs.org" >> /etc/hosts
+        - cat /etc/hosts
   artifacts:
     baseDirectory: .next
     files:
