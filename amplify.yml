@@ -11,6 +11,7 @@ frontend:
     postBuild:
       commands:
         - cat /root/.npm/_logs/*
+        - ls -al /root/.serverless/
   artifacts:
     baseDirectory: .next
     files:
