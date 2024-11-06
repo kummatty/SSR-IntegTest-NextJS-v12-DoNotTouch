@@ -1,5 +1,6 @@
 module.exports = {
   reactStrictMode: true,
+  assetPrefix: '/assets',
   i18n: {
     locales: ["en-US", "fr"],
     defaultLocale: "en-US",
